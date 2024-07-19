@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <style>
+        .header{
+            display:flex;
+            justify-content: space-between;
+        }
+        img{
+            width:70px;
+        }
+        #line{
+            width:4px;
+            height:640px;
+            background-color: #0077A1;
+            position:absolute;
+            left:80px;
+        }
+        #hamburger-menu{
+            position:relative;
+            top:15px;
+            left:15px;
+        }
+        #nav-menu{
+            display:none;
+            position:absolute;
+            top:10px;
+            left:100px;
+            border:1px solid black;
+        }
+        .items{
+            transform: translateX(-40px);
+            margin:15px;
+            list-style: none;
+        }
+        .dots{
+            position:relative;
+            top:540px;
+            left:15px;
+        }
+        .dot{
+            height:5px;
+            width:5px;
+            background-color: #0077A1;
+            border-radius:50%;
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <div id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li class="items">Home</li>
+                    <li class="items">About</li>
+                    <li class="items">Services</li>
+                    <li class="items">Contact</li>
+                </ul>
+            </nav>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+        <div id="line"></div> 
+    </div>   
+    
+    <br><br><br><br><br><br><br><br><br><br>
+    <span style="margin-left:550px;">Creative</span>
+</body>
+</html>

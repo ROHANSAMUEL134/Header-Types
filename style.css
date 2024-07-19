@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    font-family: 'Ubuntu',sans-serif;
+    color:#0077A1;
+    font-weight: 500;
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.item{
+    margin:10px auto;
+    transition: all 0.4s ease-in-out;
+}
+
+.item:hover{
+    transform:scale(1.5);
+    z-index: 1;
+}
+
+
+h1{
+    text-align: center;
+}
+
+.items{
+    position:relative;
+    cursor:pointer;
+}
+
+.items::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:#0077A1;
+    position:absolute;
+    left: 0px;
+    bottom:-2px;
+    transition: 0.6s;
+}
+
+.items:hover::after{ 
+    width: 100%;
+    color:#0077A1;
+}
+
+.item img{
+    width:300px;
+    border:2px solid #0077A1;
+}
+
+hr{
+    height:3px;
+    width:100%;
+    background-color:#0077A1;
+}
+
+span{
+    font-size:100px;
+    text-align:center;
+}
+
+#hamburger-menu {
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#hamburger-menu .bar {
+    width: 35px;
+    height: 5px;
+    background-color: #0077A1;
+    margin: 4px 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+#hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+#hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}

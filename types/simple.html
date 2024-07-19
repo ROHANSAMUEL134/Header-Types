@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <style>
+        .header{
+            display:flex;
+            justify-content: space-between;
+        }
+        img{
+            width:70px;
+        }
+        #hamburger-menu{
+            margin-top:20px;
+            margin-right:20px;
+        }
+        #nav-menu{
+            display:none;
+            position:fixed;  
+            right:20px;
+            top:100px; 
+            border:1px solid black;
+        }
+        .items{
+            transform: translateX(-40px);
+            margin:15px;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="../logo.jpeg" alt="">
+        </div>
+        <div>
+            <div id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li class="items">Home</li>
+                    <li class="items">About</li>
+                    <li class="items">Services</li>
+                    <li class="items">Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </div>    
+    <hr><br><br><br><br><br><br><br><br>
+    <span style="margin-left:500px;">Simple</span>
+</body>
+</html>
